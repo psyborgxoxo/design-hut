@@ -38,19 +38,19 @@ function ServicesSection() {
 
   const services = [
     {
-      icon: <Layout className="h-7 w-7" />,
+      icon: <Layout className="h-7 w-7 md:h-8 md:w-8" />,
       title: 'Space Planning',
       body: 'Strategic space optimization through 3D modeling and ergonomic principles to craft flowing, functional environments.',
       stat: '30% more usable space',
     },
     {
-      icon: <Ruler className="h-7 w-7" />,
+      icon: <Ruler className="h-7 w-7 md:h-8 md:w-8" />,
       title: 'Custom Solutions',
       body: 'Bespoke furniture and fixtures designed with sustainable materials and contemporary craftsmanship.',
       stat: '15+ custom pieces in 2024',
     },
     {
-      icon: <Lightbulb className="h-7 w-7" />,
+      icon: <Lightbulb className="h-7 w-7 md:h-8 md:w-8" />,
       title: 'Design Consultation',
       body: 'Expert guidance on material selection, colour psychology, and spatial harmony for your perfect aesthetic.',
       stat: '98% client satisfaction',
@@ -58,32 +58,32 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-28 bg-emerald-950">
-      {/* Keep the same subtle background */}
+    <section id="services" ref={sectionRef} className="relative py-16 md:py-28 bg-emerald-950">
+      {/* Subtle background */}
       <div
         aria-hidden
         className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
       />
       
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Keep exact same heading structure */}
-        <header className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="font-serif text-5xl md:text-6xl text-white font-medium tracking-tight">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Heading */}
+        <header className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-medium tracking-tight">
             Our Services
           </h2>
-          <p className="mt-6 text-emerald-100/90 max-w-xl mx-auto text-lg leading-relaxed">
+          <p className="mt-4 md:mt-6 text-emerald-100/90 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
             Comprehensive interior design solutions tailored to your vision, balancing
             functionality with timeless elegance.
           </p>
         </header>
         
-        {/* Keep exact same card grid */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+        {/* Card Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {services.map((s, i) => (
             <div
               key={i}
               ref={(el) => (cardRefs.current[i] = el)}
-              className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 
+              className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 
                          hover:bg-white/10 hover:border-white/20 transition-all duration-500"
               style={{
                 opacity: 0,
@@ -91,12 +91,12 @@ function ServicesSection() {
                 transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
               }}
             >
-              <div className="mb-5 inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 text-white group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-4 md:mb-5 inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/10 text-white group-hover:scale-110 transition-transform duration-300">
                 {s.icon}
               </div>
-              <h3 className="font-serif text-2xl text-white mb-3">{s.title}</h3>
-              <p className="text-emerald-100/80 mb-5 leading-relaxed">{s.body}</p>
-              <div className="text-sm font-medium text-emerald-200 border-t border-white/10 pt-4">
+              <h3 className="font-serif text-xl md:text-2xl text-white mb-2 md:mb-3">{s.title}</h3>
+              <p className="text-emerald-100/80 mb-4 md:mb-5 text-sm md:text-base leading-relaxed">{s.body}</p>
+              <div className="text-xs md:text-sm font-medium text-emerald-200 border-t border-white/10 pt-4">
                 <span className="text-emerald-300">Recent success:</span>
                 <p className="mt-1">{s.stat}</p>
               </div>

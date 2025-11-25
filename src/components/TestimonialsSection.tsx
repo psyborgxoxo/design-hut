@@ -83,60 +83,53 @@ function TestimonialsSection() {
   }, []);
 
   return (
-    <section id="testimonials" ref={containerRef} className="py-20 bg-neutral-50">
+    <section id="testimonials" ref={containerRef} className="py-16 md:py-20 bg-neutral-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Keep exact same header */}
-        <div 
-          ref={headerRef}
-          className="max-w-3xl mx-auto text-center mb-12"
-          style={{
-            opacity: 0,
-            transform: 'translateY(30px)',
-            transition: 'opacity 1s ease-out, transform 1s ease-out'
-          }}
-        >
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl mb-4 tracking-tight text-neutral-900">
+        {/* Header */}
+
+        <header className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-emerald-900 font-medium tracking-tight">
             Client Voices
           </h2>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
+          <p className="mt-4 md:mt-6 text-emerald-600 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
             Hear from our clients about their experience with Design Hut Studio's bespoke design solutions.
           </p>
-        </div>
+        </header>
         
-        {/* Keep exact same grid layout */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               ref={(el) => (cardRefs.current[index] = el)}
-              className="bg-neutral-100 p-6 rounded-lg transition-shadow duration-300 hover:shadow-lg"
+              className="bg-neutral-100 p-4 sm:p-6 rounded-lg transition-shadow duration-300 hover:shadow-lg"
               style={{
                 opacity: 0,
                 transform: 'translateY(30px)',
                 transition: 'opacity 1s ease-out, transform 1s ease-out'
               }}
             >
-              <div className="flex items-center space-x-4 mb-4">
+              <div className="flex items-center space-x-3 sm:space-x-4 mb-4">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h3 className="text-sm font-medium text-neutral-900">{testimonial.name}</h3>
-                  <p className="text-xs text-neutral-500">{testimonial.project}</p>
+                  <h3 className="text-xs sm:text-sm font-medium text-neutral-900">{testimonial.name}</h3>
+                  <p className="text-[10px] sm:text-xs text-neutral-500">{testimonial.project}</p>
                 </div>
               </div>
               <div className="flex mb-3">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 text-amber-500 fill-current"
+                    className="w-3 h-3 sm:w-4 sm:h-4 text-amber-500 fill-current"
                   />
                 ))}
               </div>
-              <p className="text-neutral-600 text-sm mb-4 leading-relaxed">{testimonial.review}</p>
-              <span className="text-xs text-neutral-700 uppercase tracking-wider">
+              <p className="text-neutral-600 text-[10px] sm:text-sm mb-4 leading-relaxed">{testimonial.review}</p>
+              <span className="text-[10px] sm:text-xs text-neutral-700 uppercase tracking-wider">
                 {testimonial.type} Client
               </span>
             </div>
