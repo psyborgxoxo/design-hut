@@ -293,14 +293,14 @@ export default function Projects() {
       <div className="min-h-screen bg-white font-sans" ref={containerRef}>
         {/* Hero Section */}
         <header className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
-          <div className="inline-flex items-center px-4 py-2 bg-emerald-50 rounded-full mb-6">
-            <Award className="h-4 w-4 text-emerald-600 mr-2" />
+          <div className="inline-flex items-center px-4 py-2 bg-emerald-200 rounded-full mb-6">
+            <Award className="h-4 w-4 text-emerald-950 mr-2" />
             <span className="text-sm font-medium text-emerald-700">Award-Winning Projects</span>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-emerald-900 font-medium tracking-tight">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-emerald-950 font-medium tracking-tight">
             Our Featured Projects
           </h2>
-          <p className="mt-4 md:mt-6 text-emerald-600 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
+          <p className="mt-4 md:mt-6 text-emerald-950 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
             Discover our meticulously crafted spaces where luxury meets functionality,
             each project telling a unique story of design excellence.
           </p>
@@ -321,13 +321,13 @@ export default function Projects() {
                     >
                       <div className="space-y-4 sm:space-y-6">
                         <div className="flex items-center space-x-4">
-                          <span className="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full uppercase tracking-wider">
+                          <span className="px-3 py-1 bg-emerald-200 text-emerald-950 text-xs font-medium rounded-full uppercase tracking-wider">
                             {project.category}
                           </span>
                           <span className="text-neutral-400 text-sm">{project.year}</span>
                         </div>
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 leading-tight">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-emerald-950 leading-tight">
                           {project.title}
                         </h2>
 
@@ -354,8 +354,8 @@ export default function Projects() {
                               Timeline
                             </p>
                             <div className="flex items-center space-x-2">
-                              <Clock className="h-4 w-4 text-emerald-600" />
-                              <span className="text-lg font-medium text-neutral-900">
+                              <Clock className="h-4 w-4 text-emerald-900" />
+                              <span className="text-lg font-medium text-emerald-900">
                                 {project.timeline}
                               </span>
                             </div>
@@ -364,7 +364,7 @@ export default function Projects() {
                             <p className="text-sm text-neutral-500 mb-2 uppercase tracking-wider font-medium">
                               Budget
                             </p>
-                            <span className="text-lg font-medium text-neutral-900">
+                            <span className="text-lg font-medium text-emerald-900">
                               {project.budget}
                             </span>
                           </div>
@@ -382,10 +382,20 @@ export default function Projects() {
                           </div>
                         </div>
 
-                        <button className="inline-flex items-center space-x-3 bg-emerald-950 text-white px-6 py-3 hover:bg-emerald-600 transition-all duration-300 group">
+                        {/* <button className="inline-flex items-center space-x-3 bg-emerald-950 text-white px-6 py-3 hover:bg-emerald-600 transition-all duration-300 group">
                           <span className="font-medium tracking-wide">Explore Project</span>
                           <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        </button> */}
+
+                        <button
+                          className="group w-full bg-emerald-950 hover:bg-emerald-800 text-white px-6 py-4 rounded-xl 
+                             flex items-center justify-center transition-all duration-300 
+                             hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base font-medium 
+                             border border-emerald-800/30"
+                        >
+                          <span className="font-medium tracking-wide">Explore Project</span>
                         </button>
+
                       </div>
                     </div>
 
@@ -456,7 +466,7 @@ export default function Projects() {
                                 className="flex items-start space-x-3 group"
                               >
                                 <CheckCircle
-                                  className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-0.5 group-hover:scale-110 transition-transform"
+                                  className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-900 mt-0.5 group-hover:scale-110 transition-transform"
                                 />
                                 <span className="text-neutral-700">{feature}</span>
                               </li>
@@ -475,7 +485,7 @@ export default function Projects() {
                                 className="flex items-start space-x-3 group"
                               >
                                 <CheckCircle
-                                  className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-600 mt-0.5 group-hover:scale-110 transition-transform"
+                                  className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-900 mt-0.5 group-hover:scale-110 transition-transform"
                                 />
                                 <span className="text-neutral-700">{material}</span>
                               </li>
@@ -535,12 +545,6 @@ export default function Projects() {
                       <h3 className="text-2xl sm:text-3xl font-light text-neutral-900">
                         Project Gallery
                       </h3>
-                      <button className="flex items-center space-x-2 text-emerald-600 hover:text-emerald-700 transition-colors">
-                        <Play className="h-4 w-4" />
-                        <span className="text-sm sm:text-base font-medium">
-                          View Virtual Tour
-                        </span>
-                      </button>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

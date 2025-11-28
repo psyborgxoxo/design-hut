@@ -335,7 +335,7 @@ function Chatbot({ isOpen, setIsOpen }: ChatbotProps) {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white p-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          className="bg-gradient-to-r from-emerald-900 to-emerald-900 hover:from-emerald-500 hover:to-emerald-400 text-white p-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
           aria-label="Open chat support"
         >
           <MessageCircle className="h-5 w-5" />
