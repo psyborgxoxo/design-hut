@@ -288,9 +288,8 @@ export default function Projects() {
     <>
       <section
         id="projects-section"
-        className="pb-16 sm:pb-20"
       ></section>
-      <div className="min-h-screen bg-white font-sans" ref={containerRef}>
+      <div className="min-h-screen bg-[#f5f5f5] font-sans" ref={containerRef}>
         {/* Hero Section */}
         <header className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-emerald-200 rounded-full mb-6">
@@ -419,7 +418,7 @@ export default function Projects() {
                       </div>
 
                       {/* Floating Testimonial */}
-                      <div className="absolute -bottom-8 left-6 right-6 sm:-left-6 sm:right-auto sm:max-w-md bg-white p-6 shadow-2xl border border-neutral-100">
+                      <div className="absolute -bottom-8 left-6 right-6 sm:-left-6 sm:right-auto sm:max-w-md bg-[#f5f5f5] p-6 shadow-2xl border border-neutral-100">
                         <div className="flex items-start space-x-4 mb-4">
                           <img
                             src={project.testimonial.image}
@@ -455,7 +454,7 @@ export default function Projects() {
                     {/* Features & Materials */}
                     <div className="sm:col-span-8">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div className="bg-neutral-50 p-6 sm:p-8 rounded-lg">
+                        <div className="bg-[#f5f5f5] p-6 sm:p-8 rounded-lg">
                           <h3 className="text-xl sm:text-2xl font-light mb-4 sm:mb-6 text-neutral-900">
                             Key Features
                           </h3>

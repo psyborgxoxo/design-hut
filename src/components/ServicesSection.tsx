@@ -58,7 +58,7 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-16 md:py-28 bg-emerald-950">
+    <section id="services" ref={sectionRef} className="relative py-16 md:py-28 bg-[#f5f5f5]">
       {/* Subtle background */}
       <div
         aria-hidden
@@ -68,10 +68,10 @@ function ServicesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Heading */}
         <header className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-medium tracking-tight">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-emerald-950 font-medium tracking-tight">
             Our Services
           </h2>
-          <p className="mt-4 md:mt-6 text-emerald-100/90 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
+          <p className="mt-4 md:mt-6 text-emerald-950 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
             Comprehensive interior design solutions tailored to your vision, balancing
             functionality with timeless elegance.
           </p>
@@ -83,8 +83,8 @@ function ServicesSection() {
             <div
               key={i}
               ref={(el) => (cardRefs.current[i] = el)}
-              className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 
-                         hover:bg-white/10 hover:border-white/20 transition-all duration-500"
+              className="group bg-emerald-950 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 
+                         hover:bg-emerald-800 hover:border-white/20 transition-all duration-500"
               style={{
                 opacity: 0,
                 transform: 'translateY(60px)',
@@ -95,9 +95,9 @@ function ServicesSection() {
                 {s.icon}
               </div>
               <h3 className="font-serif text-xl md:text-2xl text-white mb-2 md:mb-3">{s.title}</h3>
-              <p className="text-emerald-100/80 mb-4 md:mb-5 text-sm md:text-base leading-relaxed">{s.body}</p>
-              <div className="text-xs md:text-sm font-medium text-emerald-200 border-t border-white/10 pt-4">
-                <span className="text-emerald-300">Recent success:</span>
+              <p className="text-white mb-4 md:mb-5 text-sm md:text-base leading-relaxed">{s.body}</p>
+              <div className="text-xs md:text-sm font-medium text-white border-t border-white/10 pt-4">
+                <span className="text-white">Recent success:</span>
                 <p className="mt-1">{s.stat}</p>
               </div>
             </div>

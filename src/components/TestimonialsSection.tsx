@@ -83,7 +83,7 @@ function TestimonialsSection() {
   }, []);
 
   return (
-    <section id="testimonials" ref={containerRef} className="py-16 md:py-20 bg-neutral-50">
+    <section id="testimonials" ref={containerRef} className="py-16 md:py-20 bg-[#f5f5f5]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
 
@@ -92,10 +92,10 @@ function TestimonialsSection() {
           transform: 'translateY(30px)',
           transition: 'opacity 1s ease-out, transform 1s ease-out'
         }}>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-emerald-900 font-medium tracking-tight">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-emerald-950 font-medium tracking-tight">
             Client Voices
           </h2>
-          <p className="mt-4 md:mt-6 text-emerald-900 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
+          <p className="mt-4 md:mt-6 text-emerald-950 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
             Hear from our clients across Karnataka and South India about their experience with Design Hut Studio's bespoke design solutions.
           </p>
         </header>
