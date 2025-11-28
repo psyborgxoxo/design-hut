@@ -197,9 +197,9 @@ const projects = [
       "Venetian plaster"
     ],
     testimonial: {
-      name: "Priya Sharma",
+      name: "Priya Shetty",
       role: "Homeowner",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=80",
+      image: "https://plus.unsplash.com/premium_photo-1664910500054-608d23c060f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8",
       rating: 5,
       quote: "Design Hut transformed our kitchen into a stunning Tuscan retreat. The attention to detail and quality of materials exceeded our expectations."
     },
@@ -238,9 +238,9 @@ const projects = [
       "LED lighting systems"
     ],
     testimonial: {
-      name: "Rahul Mehta",
+      name: "Rahul Jain",
       role: "Property Owner",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80",
+      image: "https://plus.unsplash.com/premium_photo-1682089787056-9ac0c78a2ac2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwcG9ydHJhaXRzfGVufDB8fDB8fHww",
       rating: 5,
       quote: "Our outdoor space has become our favorite part of the home. The attention to detail in the design and execution is remarkable."
     },

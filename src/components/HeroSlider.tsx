@@ -5,8 +5,8 @@ import gsap from 'gsap';
 const heroSlides = [
    {
     image: "https://www.boffi.com/wp-content/uploads/2025/02/COVE-3.jpg",
-    title: "Modern Living",
-    subtitle: "Minimalist Design"
+    title: "Way Of Living",
+    subtitle: "Contemporary"
   },
   {
     image: "https://images.unsplash.com/photo-1722649957265-372809976610?q=80&w=1494&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -25,8 +25,8 @@ const heroSlides = [
   },
     {
     image: "https://www.boffi.com/wp-content/uploads/2025/02/K2_Outdoor_Copertina.jpg",
-    title: "Luxury Interiors",
-    subtitle: "Premium Finishes"
+    title: "Premium Interiors",
+    subtitle: "Minimal"
   }
 
 ];
@@ -149,7 +149,7 @@ function HeroSlider() {
           {heroSlides[currentSlide].title} · {heroSlides[currentSlide].subtitle}
         </p>
 
-        
+
         {/* <h1 className="text-white text-5xl sm:text-7xl md:text-8xl lg:text-[180px] font-light uppercase tracking-wider leading-none text-center">
           Exquisite
         </h1> */}
@@ -157,7 +157,7 @@ function HeroSlider() {
 
         <h1 className="text-white text-5xl sm:text-7xl md:text-8xl lg:text-[180px] font-light uppercase tracking-wider leading-none text-center
                 relative inline-block
-                 bg-gradient-to-br from-neutral-200 via-white to-neutral-800
+                 bg-gradient-to-br from-neutral-200 via-white to-neutral-600
                  bg-clip-text text-transparent
                 drop-shadow-lg
                  animate-shine">
