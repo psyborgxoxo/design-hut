@@ -3,8 +3,13 @@ import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import gsap from 'gsap';
 
 const heroSlides = [
+   {
+    image: "https://www.boffi.com/wp-content/uploads/2025/02/COVE-3.jpg",
+    title: "Modern Living",
+    subtitle: "Minimalist Design"
+  },
   {
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=2000",
+    image: "https://images.unsplash.com/photo-1722649957265-372809976610?q=80&w=1494&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Modern Living",
     subtitle: "Minimalist Design"
   },
@@ -14,10 +19,16 @@ const heroSlides = [
     subtitle: "Urban Spaces"
   },
   {
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=2000",
+    image: "https://www.boffi.com/wp-content/uploads/2025/02/HIDE-PRO_OPEN.jpg",
+    title: "Luxury Interiors",
+    subtitle: "Premium Finishes"
+  },
+    {
+    image: "https://www.boffi.com/wp-content/uploads/2025/02/K2_Outdoor_Copertina.jpg",
     title: "Luxury Interiors",
     subtitle: "Premium Finishes"
   }
+
 ];
 
 interface Slide {
@@ -259,3 +270,4 @@ function HeroSlider() {
 }
 
 export default HeroSlider;
+
